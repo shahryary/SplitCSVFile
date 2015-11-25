@@ -22,6 +22,7 @@ invisible(lapply(seq_along(lst), function(i)
 
 # Optianl - Importing multi csv files into R ( Reading csv directory  
 # and import all of them as a data frame )
+
 temp = list.files(pattern="*.csv")
 system.time(for (i in 1:length(temp)) assign(temp[i], fread(temp[i])))
 
